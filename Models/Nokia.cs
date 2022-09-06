@@ -13,17 +13,9 @@ namespace DesafioPOO.Models
         // IMPLEMENTADO
         public override void InstalarAplicativo(string nomeApp)
         {
-         
-            
-            var frase = "";
-            foreach (var letra in nomeApp)
-            {
-                
-                frase = frase + letra;
-                WriteLine($"O seu Nokia {Modelo} está instalando {frase}");
-                Thread.Sleep(500);
-                Console.Clear();
-            } 
+
+            WriteLine($"Instalando aplicativo {nomeApp} em seu {Modelo}.");
+            Thread.Sleep(500);
             WriteLine($"Aplicativo {nomeApp} está instalado em seu {Modelo}.");
             Thread.Sleep(500);
 
